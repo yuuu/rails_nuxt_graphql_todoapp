@@ -33,5 +33,7 @@ module RailsNuxtGrapshqlTodoapp
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    # config.load_defaults 6.0 and config.autoloader = :classic
+    config.action_controller.default_protect_from_forgery = false
   end
 end
